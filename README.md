@@ -34,23 +34,6 @@ main.py → punto de ejecución
 
 La estructura facilita agregar futuras funciones como: reportes automáticos, visualización de datos, backend API, o integración con SIEM.
 
-Estructura del proyecto
-SecurityLogAnalyzer/
-│
-├── main.py
-│
-├── utils/
-│   └── file_reader.py
-│
-├── analytics/
-│   ├── log_analyzer.py
-│   └── brute_force_detector.py
-│
-├── data/
-│   └── logs.csv
-│
-└── reports/
-
 Requisitos
 
 Python 3.10 o superior
@@ -75,25 +58,6 @@ Estadísticas generales
 Fallos por IP
 
 IPs y usuarios sospechosos de fuerza bruta
-
-Ejemplo de salida:
-Archivo leído correctamente.
-Eventos totales: 250
-
------ RESULTADOS GENERALES -----
-Total de eventos: 250
-Intentos fallidos: 87
-Fallos por IP:
-  192.168.1.10: 15
-  10.0.0.2: 3
-  201.55.19.88: 8
-
------ DETECCIÓN DE FUERZA BRUTA -----
-IPs sospechosas:
-  192.168.1.10 → 15 intentos
-
-Usuarios sospechosos:
-  admin → 12 intentos
 
 Licencia
 
