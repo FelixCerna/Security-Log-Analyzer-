@@ -1,0 +1,10 @@
+Copyright (c) 2025 Félix Damián Cerna Carrasco
+
+Todos los derechos reservados.
+Este software es propiedad exclusiva del autor.
+
+No se permite copiar, modificar, distribuir, publicar,
+vender, alquilar ni utilizar este software, total o parcialmente,
+sin permiso explícito y por escrito del autor.
+
+Cualquier uso no autorizado está estrictamente prohibido.

@@ -1,0 +1,12 @@
+Reporte de análisis de seguridad
+--------------------------------
+Total de eventos: 7
+Intentos fallidos: 6
+
+Fallos por IP:
+192.168.1.10: 2
+192.168.1.25: 1
+10.0.0.8: 3
+
+IPs sospechosas:
+10.0.0.8

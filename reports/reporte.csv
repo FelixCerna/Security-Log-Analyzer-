@@ -1,0 +1,12 @@
+TIPO,IP/USUARIO,INTENTOS
+Fallo por IP,192.168.1.10,6
+Fallo por IP,192.168.1.50,3
+Fallo por IP,192.168.1.150,1
+Fallo por IP,200.55.1.10,5
+
+----- DETECCIÓN DE FUERZA BRUTA -----
+TIPO,IP/USUARIO,INTENTOS
+IP sospechosa,192.168.1.10,6
+IP sospechosa,200.55.1.10,5
+Usuario sospechoso,admin,6
+Usuario sospechoso,unknown,5
