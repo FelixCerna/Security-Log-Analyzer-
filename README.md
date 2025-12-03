@@ -1,72 +1,51 @@
 SecurityLogAnalyzer
+Plataforma de análisis de registros orientada a la identificación de actividad potencialmente maliciosa
 
-Sistema de análisis de logs y detección de intentos de fuerza bruta
+SecurityLogAnalyzer es una solución desarrollada en Python para el procesamiento y análisis de registros de autenticación. Su propósito es proporcionar una revisión clara y estructurada del comportamiento registrado en sistemas, permitiendo identificar fallos recurrentes, patrones irregulares y actividades compatibles con intentos de acceso no autorizados.
 
-SecurityLogAnalyzer es una herramienta diseñada para analizar registros de autenticación, identificar patrones de fallos y detectar posibles ataques de fuerza bruta mediante un análisis automático de eventos.
+El proyecto está diseñado bajo principios de modularidad, claridad y mantenibilidad, facilitando su adopción en entornos académicos, de laboratorio o en pequeñas organizaciones que requieren visibilidad sobre la actividad en sus sistemas.
 
-Su objetivo es apoyar a empresas, estudiantes y equipos de TI a comprender mejor el comportamiento de acceso en sus sistemas, reforzar la seguridad y anticiparse a actividades sospechosas.
+Objetivos del sistema
 
-Características principales
+Analizar registros de autenticación de forma automatizada.
 
-✔ Análisis automático de logs (.csv)
+Identificar intentos fallidos y frecuencia de eventos asociados a direcciones IP específicas.
 
-Conteo total de eventos.
+Detectar comportamientos compatibles con ataques de fuerza bruta.
 
-Identificación de intentos fallidos.
+Proveer resultados interpretables para la toma de decisiones en materia de seguridad.
 
-Agrupación de fallos por dirección IP.
+Servir como base para futuras implementaciones o integraciones en sistemas más amplios.
 
-✔ Detección de fuerza bruta
+Componentes principales
 
-Incluye un módulo especializado (BruteForceDetector) configurable para alertar cuando una IP o usuario supera cierto umbral de intentos fallidos.
+El sistema está construido mediante módulos independientes que permiten escalar y modificar la herramienta con facilidad:
 
-✔ Modular y fácil de expandir
+Módulo de lectura: procesamiento de archivos CSV y conversión de datos en estructuras manipulables.
 
-El proyecto está organizado por módulos independientes:
+Módulo analítico: generación de métricas clave sobre la actividad registrada.
 
-utils → lectura y manejo de archivos
+Módulo de detección: identificación de IPs y usuarios cuyo comportamiento excede umbrales definidos.
 
-analytics → análisis de información
+Archivo principal: coordinación central del proceso de lectura, análisis y reporte.
 
-brute_force_detector → detección de ataques
+Ejecución
 
-main.py → punto de ejecución
+Requisitos mínimos: Python 3.10 o superior.
 
-La estructura facilita agregar futuras funciones como: reportes automáticos, visualización de datos, backend API, o integración con SIEM.
-
-Requisitos
-
-Python 3.10 o superior
-
-No requiere librerías externas (todo es estándar)
-
-Cómo ejecutar el programa:
-
-Coloca un archivo logs.csv válido en la carpeta data/.
-
-Abre una terminal en la carpeta principal del proyecto.
-
-Ejecuta:
+Para ejecutar el sistema:
 
 python main.py
 
 
-El sistema mostrará:
-
-Estadísticas generales
-
-Fallos por IP
-
-IPs y usuarios sospechosos de fuerza bruta
+El programa procesará automáticamente el archivo de registros ubicado en la carpeta correspondiente y mostrará los resultados del análisis.
 
 Licencia
 
-Este proyecto está protegido bajo una licencia propietaria, creada por el autor.
-No se permite copiar, modificar, distribuir ni utilizar este software sin autorización escrita.
-
-Para más detalles, revise el archivo: LICENSE
+Este proyecto está protegido por una licencia de uso privado.
+No se permite copiar, modificar, distribuir ni utilizar este software sin autorización explícita y por escrito del autor.
 
 Autor
 
-Desarrollado por Félix Damián Cerna Carrasco (2025).
-Estudiante de Ingeniería en Ciberseguridad.
+Félix Damián Cerna Carrasco
+Estudiante de Ingeniería en Ciberseguridad
